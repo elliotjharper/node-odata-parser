@@ -1,5 +1,7 @@
 OData query string parser for node.js based on [pegjs](http://pegjs.majda.cz/).
 
+Fork with added support for the `IN` filter.
+
 ## Installation
 
 ```
