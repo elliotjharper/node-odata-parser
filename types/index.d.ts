@@ -1,35 +1,35 @@
-type FilterOp = "eq" | "in"
+export type FilterOp = "eq" | "in"
 
-type FilterPropertyTarget = {
+export type FilterPropertyTarget = {
   type: "property"
   name: string
 }
 
-type FilterArrayTarget = {
+export type FilterArrayTarget = {
   type: "array"
   value: string[]
 }
 
-type FilterLiteralTarget = {
+export type FilterLiteralTarget = {
   type: "literal"
   value: string
 }
 
-type FilterTarget = FilterPropertyTarget | FilterLiteralTarget | FilterArrayTarget
+export type FilterTarget = FilterPropertyTarget | FilterLiteralTarget | FilterArrayTarget
 
-type Filter = {
+export type Filter = {
   type: FilterOp
   left: FilterTarget
   right: FilterTarget
 }
 
-type AndFilter = {
+export type AndFilter = {
   type: "and"
   left: Filter
   right: Filter
 }
 
-declare function parse(query: string): {
+export function parse(query: string): {
   error?: string
   $filter?: Filter | AndFilter
 }
