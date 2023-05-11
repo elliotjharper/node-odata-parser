@@ -5,7 +5,7 @@ Fork with added support for the `IN` filter.
 ## Installation
 
 ```
-npm install @seamapi/odata-parser
+npm install eh-odata-parser
 ```
 
 ## Usage
