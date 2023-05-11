@@ -95,6 +95,7 @@ restuls in:
 [Auth0](auth0.com)
 
 Forked by Seam
+Forked by Elliotjharper purely to release on npm publicly
 
 ## License
 

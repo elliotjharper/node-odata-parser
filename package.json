@@ -1,14 +1,16 @@
 {
-  "name": "@seamapi/odata-parser",
-  "version": "1.0.2",
+  "name": "eh-odata-parser",
+  "version": "1.4.2",
   "description": "OData query string parser",
   "main": "lib/index.js",
   "scripts": {
     "test": "npm run clean && npm run build && mocha -R spec",
-    "clean": "rm -rf lib/odata-parser.js",
+    "clean": "rimraf lib/odata-parser.js",
     "build": "pegjs src/odata.pegjs lib/odata-parser.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "rimraf": "^5.0.0"
+  },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/git": "^10.0.1",
@@ -17,7 +19,7 @@
     "mocha": "2.1.0",
     "pegjs": "0.7.0"
   },
-  "repository": "git@github.com:seamapi/node-odata-parser.git",
+  "repository": "git@github.com:elliotjharper/node-odata-parser.git",
   "keywords": [
     "odata",
     "parser"
